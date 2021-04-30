@@ -1,0 +1,23 @@
+{
+    "markdownlint.config": {
+        "MD007": {
+            "indent": 4,
+        },
+        "MD026": false,
+        "MD030": {
+            "ol_multi": 3,
+            "ol_single": 3,
+            "ul_multi": 3,
+            "ul_single": 3
+        }
+    },
+    "cSpell.words": [
+        "Cygwin",
+        "MSYS",
+        "POSIX",
+        "mingw",
+        "mintty",
+        "repos",
+        "walkthroughs"
+    ]
+}
