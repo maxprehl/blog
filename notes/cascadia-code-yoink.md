@@ -231,3 +231,13 @@ Workaroudn is put the ttf file directly in IDEA's fonts folder
 another `cp` and a restart of IDEA and my work here is DONEZO.
 
 (Now, if ony IntelliJ also registered it's fonts with Windows when it installed :hmm:)
+
+## Update
+
+I need this update, because, well... updates.
+
+IntelliJ makes a new folder for itself with each update.  ie. `IntelliJ IDEA 2021.2`.
+
+When this happens our old fonts are lost to time (they're just in the old version's folder).
+
+So we get to do this whole song and dance all over again!  🎉

@@ -32,6 +32,9 @@ PS> wsl --export Debian "G:\VMs\wsl\Debian-sid-v2.tar"
 
 ## Importing
 
+> UPDATE: more docs available
+> [here](https://docs.microsoft.com/en-us/windows/wsl/use-custom-distro)
+
 The command `wsl --import` is the name, creating distros is the game.
 
 This is the ONLY way to create multiple distros (of the same base).  
@@ -49,3 +52,20 @@ version
 ```powershell
 PS> wsl --import Debian-sid-v1 "G:\VMs\wsl\Debian-sid-v1" "G:\VMs\wsl\Debian-sid-v2.tar" --version 1
 ```
+
+### Using an imported distro
+
+You're default user will be reset to `root`.
+
+In order to remediate this you need to boot into the distro and modify its
+`/etc/wsl.conf` file.
+
+```sh
+echo -e "[user]\ndefault=max" >> /etc/wsl.conf
+```
+
+It would also behoove you to make sure that
+
+-   sudo is installed
+-   your user is a sudoer
+-   your user is in the `wheel` group
