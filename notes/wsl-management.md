@@ -55,7 +55,7 @@ PS> wsl --import Debian-sid-v1 "G:\VMs\wsl\Debian-sid-v1" "G:\VMs\wsl\Debian-sid
 
 ### Using an imported distro
 
-You're default user will be reset to `root`.
+After importing, you're default user will be reset to `root`.
 
 In order to remediate this you need to boot into the distro and modify its
 `/etc/wsl.conf` file.
@@ -63,6 +63,13 @@ In order to remediate this you need to boot into the distro and modify its
 ```sh
 echo -e "[user]\ndefault=max" >> /etc/wsl.conf
 ```
+
+> The result should look like: 
+>
+> ```conf
+> [user]
+> default=max
+> ```
 
 It would also behoove you to make sure that
 
